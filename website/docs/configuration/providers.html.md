@@ -20,7 +20,9 @@ configuration (like endpoint URLs or cloud regions) before they can be used.
 
 - This page documents how to configure settings for providers.
 
-- The [Provider Requirements](./provider-requirements.html) page documents how
+- The [Provider Requirements](./provider-r
+
+) page documents how
   to declare providers so Terraform can install them.
 
 ## Provider Configuration
@@ -173,13 +175,13 @@ from their parents.
 
 The `version` meta-argument specifies a version constraint for a provider, and
 works the same way as the `version` argument in a
-[`required_providers` block](./provider_requirements.html). The version
+[`required_providers` block](./provider-requirements.html#requiring-providers). The version
 constraint in a provider configuration is only used if `required_providers`
 does not include one for that provider.
 
 **We do not recommend using the `version` argument in provider configurations.**
 In Terraform 0.13 and later, version constraints should always be declared in
-[the `required_providers` block](./provider_requirements.html).
+[the `required_providers` block](./provider-requirements.html#requiring-providers).
 
 -> **Note:** The `version` meta-argument made sense before Terraform 0.13, since
 Terraform could only install providers that were distributed by HashiCorp. Now
